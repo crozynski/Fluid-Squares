@@ -1,0 +1,840 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Fluid Squares v2. A responsive grid experiment.</title> 
+<meta charset="utf-8"> 
+<meta name = "viewport" content="width=device-width, maximum-scale=1"> <!-- Kills text zoom in iOS. Media Queries manage font sizes -->
+<link rel="stylesheet" href="css/screen.css?v=2"> 
+</head> 
+<body> 
+
+<a href="http://dinosaurswithlaserz.com/2011/07/18/fluid-squares-v2" class="title"> 
+<div> 
+<h1>Fluid Squares</h1> 
+<p>Fluid Squares preserves a unit's square proportion within a fluid layout. Number of columns also reduce to suit browser or device width using CSS media queries.</p> 
+<small>More about Fluid Squares</small> 
+</div> 
+</a> 
+
+<a href="http://absolide.tumblr.com/post/7317210512/full-css-fluid-squares/" class="title"> 
+<div> 
+<h1>V2</h1> 
+<p>V1 used a transparent image with max-width:100%. Marco Lago stepped up with a clever CSS method that eliminates the need for images. This new version also uses css3-mediaqueries.js (now works in IE) and is Mobile First.</p>
+<small>Marco Lago's CSS method</small>
+</div> 
+</a>
+ 
+<div class="category"> 
+<h2>HTML + <br>CSS + <br>JS = <br>HTML5</h2> 
+</div> 
+ 
+<!-- How this works
+<body> is the wrapper
+<a href=""> is your unit container, set the padding-bottom same as width to preserve the square
+<div> positions a unit's content inside the square
+<h3>Title</h3>
+<p>Words</p>
+<small>Small words</small>
+</div>
+</a>
+Rinse and repeat
+</body>
+--> 
+ 
+<a href="http://diveintohtml5.ep.io/"> 
+<div> 
+<h3>Dive into HTML5</h3> 
+<p>Dive Into HTML5 seeks to elaborate on a hand-picked Selection of features from the HTML5 specification and other fine Standards. The final manuscript has been published...</p> 
+<small>diveintohtml5.ep.io/</small> 
+</div> 
+</a> 
+ 
+<a href="http://html5rocks.com"> 
+<div> 
+<h3>HTML5 Rocks</h3> 
+<p>Watch the sldeshow that let's you play with HTML5 features. Jump headfirst into HTML5 by experimenting with each API. A showroom of content that you can reuse...</p> 
+<small>html5rocks.com</small> 
+</div> 
+</a> 
+
+<a href="http://html5rocks.com"> 
+<div> 
+<img src="http://fluidsquares.com/img/html5rocks.png" />
+</div> 
+</a> 
+ 
+<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/"> 
+<div> 
+<h3>WHATWG HTML Living Standard</h3> 
+<p>This specification evolves HTML and its related APIs to ease the authoring of Web-based applications...</p> 
+<small>whatwg.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://developers.whatwg.org/"> 
+<div> 
+<h3>HTML5 Spec for Web Devs</h3> 
+<p>This HTML5 specification is like no other—It has been processed with you, the humble web developer, in mind...</p> 
+<small>developers.whatwg.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://html5.org/"> 
+<div> 
+<h3>HTML5.org</h3> 
+<p>HTML5 differences from HTML4.<br> WHATWG and HTML5 FAQ.<br> HTML5 validator.<br> HTML5 (changes) tracker...</p> 
+<small>html5.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://remysharp.com/2009/01/07/html5-enabling-script"> 
+<div> 
+<h3>HTML5 Shiv</h3> 
+<p>Since HTML5 is getting more attention by way of marking up our new pages, and the only way to get IE to acknowledge the new elements...</p> 
+<small>remysharp.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://modernizr.com"> 
+<div> 
+<h3>Modernizr</h3> 
+<p>Modernizr adds classes to the &lt;html&gt; element which allow you to target specific browser functionality in your stylesheet. You don't actually need to write any Javascript to use it...</p> 
+<small>modernizr.com</small> 
+</div> 
+</a> 
+ 
+<a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills"> 
+<div> 
+<h3>HTML5 Polyfills</h3> 
+<p>All the shims, fallbacks, and polyfills in order to implant html5 functionality in browsers that don't natively support them...</p> 
+<small>github.com/Modernizr</small> 
+</div> 
+</a> 
+ 
+<a href="http://html5boilerplate.com"> 
+<div> 
+<h3>HTML5 Boilerplate</h3> 
+<p>Along with HTML5 Boilerplate's rock solid commitment to cross-browser consistency, H5BP brings you delicious documentation, a site optimizing build script...</p> 
+<small>html5boilerplate.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://html5reset.org/"> 
+<div> 
+<h3>HTML5 Reset</h3> 
+<p>Now that modern browsers are starting to support some of the really useful parts of HTML5 and CSS3, it's time for our best practices to catch up...</p> 
+<small>html5reset.org/</small> 
+</div> 
+</a> 
+ 
+<a href="http://initializr.com"> 
+<div> 
+<h3>Initializr: Customise Boilerplate</h3> 
+<p>Initializr is an HTML5 templates generator to help you getting started with an HTML5 project. It is built on HTML5 Boilerplate...</p> 
+<small>initializr.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://camendesign.com/code/video_for_everybody"> 
+<div> 
+<h3>Video for Everybody</h3> 
+<p>Video for Everybody is simply a chunk of HTML code that embeds a video into a website using the HTML5 &lt;video&gt; element, falling back to Flash automatically...</p> 
+<small>camendesign.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://html5test.com"> 
+<div> 
+<h3>HTML5 Browser Test</h3> 
+<p>The HTML5 test score is only an indication of how well your browser supports the upcoming HTML5 standard and related specifications. It does not try to test all...</p> 
+<small>html5test.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://hsivonen.iki.fi/doctype"> 
+<div> 
+<h3>Activating Browser Modes with Doctype</h3> 
+<p>In order to deal both with content written according to Web standards...</p> 
+<small>hsivonen.iki.fi</small> 
+</div> 
+</a> 
+ 
+<a href="http://software.hixie.ch/utilities/js/live-dom-viewer"> 
+<div> 
+<h3>Live DOM Viewer</h3> 
+<p>Markup to test. DOM view. Rendered view. innerHTML view. Log.</p> 
+<small>software.hixie.ch</small> 
+</div> 
+</a> 
+ 
+<a href="http://camendesign.com/code/developpeurs_sans_frontieres"> 
+<div> 
+<h3>Centre your page without a wrapper</h3> 
+<p>The number one suggestion I see from the proprietor of html5gallery.com to submitters is...</p> 
+<small>camendesign.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://pxtoem.com"> 
+<div> 
+<h3>Pixels, ems, percentages, points</h3> 
+<p>Pixel to em conversion made simple. Select your body font size. Voila! Your conversions. Oh la la! Custom conversions...</p> 
+<small>pxtoem.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.29digital.net/grid"> 
+<div> 
+<h3>Grid Calculator</h3> 
+<p>Change the settings (by dragging the sliders, clicking on the bars, or editing the values) to calculate the overall width of your grid...</p> 
+<small>www.29digital.net</small> 
+</div> 
+</a> 
+ 
+<a href="http://code.google.com/chrome/devtools/docs/overview.html"> 
+<div> 
+<h3>Chrome Developer Tools</h3> 
+<p>The Developer Tools, bundled and available in Chrome, allows web developers and programmers deep access...</p> 
+<small>code.google.com/chrome</small> 
+</div> 
+</a> 
+ 
+<a href="http://meyerweb.com/eric/thoughts/2011/01/03/reset-revisited/"> 
+<div> 
+<h3>Eric Revisits Reset</h3> 
+<p>It was close to four years ago now that I first floated (ha!), publicly refined, and then published at its own home what’s become known as...</p> 
+<small>meyerweb.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://developer.yahoo.com/performance/rules.html#js_bottom"> 
+<div> 
+<h3>YUI Best Practices</h3> 
+<p>The Exceptional Performance team has identified a number of best practices for making web pages fast. The list includes 35 best practices...</p> 
+<small>developer.yahoo.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://na.isobar.com/standards"> 
+<div> 
+<h3>Isobar Code Standards</h3> 
+<p>This document contains normative guidelines for web applications built by the Interface Development practice of Isobar North America...</p> 
+<small>na.isobar.com/standards</small> 
+</div> 
+</a> 
+ 
+<a href="http://code.google.com/edu/introductory_courses.html"> 
+<div> 
+<h3>Google Code Uni</h3> 
+<p>Read. Learn. Build. $.</p> 
+<small>code.google.com/edu</small> 
+</div> 
+</a> 
+ 
+<div class="category"> 
+ 
+<h2>CSS</h2> 
+</div> 
+ 
+<a href="http://css3please.com"> 
+<div> 
+<h3>CSS3, Please!</h3> 
+<p>The Cross-Browser CSS3 Rule Generator. You can edit the underlined values in this css file, but don't worry about making sure the corresponding values match...</p> 
+<small>css3please.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://css3generator.com"> 
+<div> 
+<h3>CSS3 Generator</h3> 
+<p>Another nice way to play with CSS3.</p> 
+<small>css3generator.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://css3maker.com"> 
+<div> 
+<h3>CSS3 Maker</h3> 
+<p>Another nice way to play with CSS3.</p> 
+<small>css3maker.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.smashingmagazine.com/2011/02/16/css-useful-coding-techniques-and-design-solutions"> 
+<div> 
+<h3>CSS Gimmicks</h3> 
+<p>Although CSS isn’t that difficult, useful CSS techniques are not easy to find. Sometimes finding a cross-browser solution might take time...</p> 
+<small>smashingmagazine.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://matthewlein.com/ceaser"> 
+<div> 
+<h3>Ceaser</h3> 
+<p>CSS easing animation tool. Choose an easing type and test it out with a few effects. If you don’t quite like the easing, grab a handle and fix it...</p> 
+<small>matthewlein.com/ceaser</small> 
+</div> 
+</a> 
+ 
+<a href="http://paulirish.com/2009/browser-specific-css-hacks"> 
+<div> 
+<h3>Browser CSS Hacks</h3> 
+<p>I don't use CSS hacks anymore. Instead I use IE's conditional comments to apply classes to the body tag. Nonetheless, I wanted to document every browser-specific...</p> 
+<small>paulirish.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://css-tricks.com/efficiently-rendering-css/"> 
+<div> 
+<h3>Efficiently Rendering CSS</h3> 
+<p>I admittedly don't think about this idea very often... how efficient is the CSS that we write, in terms of how quickly the browser can render it?</p> 
+<small>css-tricks.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips"> 
+<div> 
+<h3>CSS Spriting Tips</h3> 
+<p>One of the most effective ways of speeding up a website’s render time is to reduce the number of HTTP requests required to fetch content. An effective method...</p> 
+<small>blog.mozilla.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://css3pie.com"> 
+<div> 
+<h3>CSS3 Pie</h3> 
+<p>PIE makes Internet Explorer 6-8 capable of rendering several of the most useful CSS3 decoration features.</p> 
+<small>css3pie.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://selectivizr.com"> 
+<div> 
+<h3>Selectivizr</h3> 
+<p>selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8. Simply include the script in your...</p> 
+<small>selectivizr.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://css-infos.net/properties/webkit.php"> 
+<div> 
+<h3>Webkit CSS Properties</h3> 
+<p>Comprehensive list of -webkit properties.</p> 
+<small>css-infos.net</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.findmebyip.com/litmus/"> 
+ 
+<div> 
+<h3>HTML5 &amp; CSS3 Browser Support</h3> 
+<p>CSS3 properties and selectors. HTML5 web applications, graphics, embedded content, audio and video, form inputs and attributes...</p> 
+<small>findmebyip.com/litmus</small> 
+</div> 
+</a> 
+ 
+<div class="category"> 
+ 
+<h2>JavaScript</h2> 
+</div> 
+ 
+<a href="http://developer.yahoo.com/yui/theater/"> 
+<div> 
+<h3>Crockford on JavaScript</h3> 
+<p>Great collection of videos at YUI Theater, particularly from Douglas Crockford on Javascript.</p> 
+<small>developer.yahoo.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://nodejs.org/#about"> 
+<div> 
+<h3>node.js</h3> 
+<p>Node's goal is to provide an easy way to build scalable network programs. In the "hello world" web server example...</p> 
+<small>nodejs.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://raphaeljs.com/"> 
+<div> 
+<h3>raphael.js</h3> 
+<p>Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. If you...</p> 
+<small>raphaeljs.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://jsfiddle.net/"> 
+<div> 
+<h3>jsfiddle</h3> 
+<p>JsFiddle is a playground for web developers, a tool which may be used in many ways. One can use it as an online editor for snippets...</p> 
+<small>jsfiddle.net</small> 
+</div> 
+</a> 
+ 
+<a href="http://jquery.com/"> 
+<div> 
+<h3>jQuery</h3> 
+<p>jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development...</p> 
+<small>jquery.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://jqueryfordesigners.com/"> 
+ 
+<div> 
+<h3>jQuery for Designers</h3> 
+<p>Learn how easy it is to apply web interaction using jQuery...</p> 
+<small>jqueryfordesigners.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml"> 
+<div> 
+<h3>Google JavaScript Style Guide</h3> 
+<p>JavaScript is the main client-side scripting language used by many of Google's open-source projects...</p> 
+<small>google-styleguide.googlecode.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-writing-high-quality-javascript/"> 
+<div> 
+<h3>High Quality JavaScript</h3> 
+<p>The brilliant Stoyan Stefanov, in promotion of his new book from O’Reilly, “JavaScript Patterns,” was kind enough to contribute an excerpt...</p> 
+<small>net.tutsplus.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://bonsaiden.github.com/JavaScript-Garden/"> 
+<div> 
+<h3>JavaScript Garden</h3> 
+<p>JavaScript Garden is a growing collection of documentation about the most quirky parts of the JavaScript programming language...</p> 
+<small>bonsaiden.github.com</small> 
+</div> 
+</a> 
+ 
+<a href="https://developer.mozilla.org/en/JavaScript"> 
+<div> 
+<h3>MDN JavaScript</h3> 
+<p>JavaScript® (sometimes shortened to JS) is a lightweight, object-oriented language, most known as the scripting language for web pages...</p> 
+<small>developer.mozilla.org</small> 
+</div> 
+</a> 
+ 
+ 
+<div class="category"> 
+<h2>Responsive Design</h2> 
+</div> 
+ 
+<a href="http://www.alistapart.com/articles/responsive-web-design"> 
+<div> 
+<h3>Responsive Web Design</h3> 
+<p>The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page...</p> 
+<small>alistapart.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://mediaqueri.es/"> 
+<div> 
+<h3>Media Queries Gallery</h3> 
+<p>A collection of responsive web designs...</p> 
+<small>mediaqueri.es</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.w3.org/TR/css3-mediaqueries/"> 
+<div> 
+<h3>W3C CSS Media Queries</h3> 
+<p>A media query consists of a media type and zero or more expressions that check for the conditions of particular media features...</p> 
+<small>w3.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/"> 
+<div> 
+<h3>Media Queries are Fool's Gold</h3> 
+<p>Unfortunately, CSS media query is fool’s gold for mobile devices. It hides tough problems and gives developers a false...</p> 
+<small>cloudfour.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.alistapart.com/articles/fluidgrids"> 
+<div> 
+<h3>Fluid Grids</h3> 
+<p>Early last year, I worked on the redesign of a rather content-heavy website. Design requirements were fairly light: the client as...</p> 
+<small>alistapart.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://unstoppablerobotninja.com/entry/fluid-images"> 
+<div> 
+<h3>Fluid Images</h3> 
+<p>I’ve always hated publishing. I don’t mean the industry, but the act. Hitting “print,” sending an email, pressing that “Publish” button on the CMS...</p> 
+<small>unstoppablerobotninja.com</small> 
+</div> 
+</a> 
+ 
+<div class="category"> 
+<h2>Grids</h2> 
+</div> 
+ 
+<a href="http://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/"> 
+<div> 
+<h3>Grid Layout W3C Working Draft</h3> 
+<p>Grid Layout contains features targeted at web application authors. The Grid can be used to achieve many different layouts...</p> 
+<small>w3.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://designinfluences.com/fluid960gs"> 
+ 
+<div> 
+<h3>Fluid 960 Grid System</h3> 
+<p>Templates for Rapid Interactive Prototyping...</p> 
+<small>designinfluences.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://aplus.rs/css/em-based-typographic-grid/"> 
+<div> 
+<h3>Em-based Typographic Grid</h3> 
+<p>Unlike most of the ready-made grid systems like BluePrint and 960.gs which are based on pixels — I wanted to base it all on ems...</p> 
+<small>aplus.rs</small> 
+</div> 
+</a> 
+ 
+<a href="http://developer.yahoo.com/yui/grids"> 
+<div> 
+<h3>YUI Grid Framework</h3> 
+<p>The foundational YUI Grids CSS offers four preset page widths, six preset templates, and the ability to stack and nest subdivided regions of two, three...</p> 
+<small>developer.yahoo.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.tinyfluidgrid.com"> 
+<div> 
+<h3>Tiny Fluid Grid</h3> 
+<p>The happy and awesome way to build fluid grid based websites. Inspired by 1kbgrid.com. Developed with love by Girlfriend's overconfident...</p> 
+<small>tinyfluidgrid.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://lessframework.com"> 
+<div> 
+<h3>Less Framework</h3> 
+<p>Less Framework is a CSS grid system for designing adaptive web­sites. It contains 4 layouts and 3 sets of typography presets, all based on a single grid...</p> 
+<small>lessframework.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://ejohn.org/blog/sub-pixel-problems-in-css"> 
+ 
+<div> 
+<h3>Sub-Pixel Problems in CSS</h3> 
+<p>Something that jumped at me, recently, was a rendering dilemma that browsers have to encounter, and gracefully handle, on a day-by-day basis with little...</p> 
+<small>ejohn.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css"> 
+<div> 
+<h3>Incredible Em &amp; Elastic Layouts with CSS</h3> 
+<p>Almost a year ago, Ty Gossman over at Stylegala asked me to write an article about elastic layouts. The best I could do was a quick email between work...</p> 
+<small>jontangerine.com</small> 
+</div> 
+</a> 
+ 
+<div class="category"> 
+ 
+<h2>Mobile</h2> 
+</div> 
+ 
+<a href="http://yiibu.com/"> 
+<div> 
+<h3>Rethinking the Mobile Web</h3> 
+<p>This site is a proof of concept for many of the ideas described in Rethinking the Mobile Web...</p> 
+<small>yiibu.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.lukew.com/presos/preso.asp?26"> 
+ 
+<div> 
+<h3>Mobile First</h3> 
+<p>For years, most Web teams have designed for the desktop. Mobile, if it even happened, was a port off the desktop version, designed and built before...</p> 
+<small>lukew.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.enough.de/products/mobile-developers-guide/"> 
+<div> 
+<h3>Mobile Developers' Guide</h3> 
+<p>This non-commercial brochure provides an overview on the different mobile technologies and platforms. 17 writers contributed their know-how...</p> 
+<small>enough.de</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.cloudfour.com/new-to-mobile-welcome-to-the-one-web-debate/"> 
+<div> 
+<h3>The One Web Debate</h3> 
+<p>There are two main camps in the mobile web: One Web and Mobile Web...</p> 
+<small>cloudfour.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.opera.com/smw/"> 
+ 
+<div> 
+<h3>State of the Mobile Web</h3> 
+<p>Every month Opera conducts the definitive analysis of the key trends affecting the mobile Web worldwide. We publish these findings as...</p> 
+<small>opera.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.w3.org/TR/mobile-bp/"> 
+<div> 
+<h3>W3C Mobile Web Best Practices</h3> 
+<p>This document specifies Best Practices for delivering Web content to mobile devices....</p> 
+<small>w3.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.alistapart.com/articles/return-of-the-mobile-stylesheet"> 
+<div> 
+<h3>Return of the Mobile Stylesheet</h3> 
+<p>The past couple of years have seen numerous new web-capable mobile devices arise, including Apple’s iPhone and its Safari browser...</p> 
+<small>alistapart.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://html5boilerplate.com/mobile"> 
+<div> 
+<h3>HTML5 Mobile Boilerplate</h3> 
+<p>Mobile Boilerplate is your trusted template made custom for creating rich and performant mobile web apps...</p> 
+<small>html5boilerplate.com/mobile</small> 
+</div> 
+</a> 
+ 
+<a href="http://stuffandnonsense.co.uk/projects/320andup/"> 
+<div> 
+<h3>320 and Up boilerplate</h3> 
+<p>‘320 and Up’ prevents mobile devices from downloading desktop assets by using a tiny screen’s...</p> 
+<small>stuffandnonsense.co.uk</small> 
+</div> 
+</a> 
+ 
+<a href="http://dinosaurswithlaserz.com/2011/03/28/mobile-framework-throwdown/"> 
+<div> 
+<h3>Mobile Framework Comparison</h3> 
+<p>Web development vs. custom API frameworks. JQTouch, jQuery Mobile, PhoneGap, Sencha Touch, Titanium...</p> 
+<small>dinosaurswithlaserz.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/"> 
+<div> 
+<h3>Responsive Images</h3> 
+<p>The goal of this technique is to deliver optimized, contextual image sizes for responsive layouts that utilize dramatically different...</p> 
+<small>filamentgroup.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://tinysrc.net/"> 
+<div> 
+<h3>Reformat Images for Mobile</h3> 
+<p>Tinysrc a fast, easy - and free - way to reformat graphics and images for mobile devices....</p> 
+<small>tinysrc.net</small> 
+</div> 
+</a> 
+ 
+<a href="http://mobiforge.com/designing/story/effective-design-multiple-screen-sizes"> 
+<div> 
+<h3>Multiple Screen Sizes</h3> 
+<p>So you're a designer and have been tasked with the design of a mobile web site...</p> 
+<small>mobiforge.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.quirksmode.org/m/css.html#t021"> 
+<div> 
+<h3>Mobile browser CSS support</h3> 
+<p>CSS contents and browser compatibility - mobile. My CSS tests, but now on mobile phones...</p> 
+<small>quirksmode.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://gs.statcounter.com/"> 
+<div> 
+<h3>StatCounter GlobalStats</h3> 
+<p>Based on aggregate data collected on a sample exceeding 15 billion pageviews per month collected from across...</p> 
+<small>gs.statcounter.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://metrics.admob.com/"> 
+<div> 
+<h3>AdMob Mobile Metrics</h3> 
+<p>Over the past two years at AdMob, we’ve experienced the rapid growth in consumer usage of the the mobile...</p> 
+<small>metrics.admob.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.w3.org/TR/mobile-bp/"> 
+<div> 
+<h3>W3C Mobile Web Best Practices</h3> 
+<p>This document specifies Best Practices for delivering Web content to mobile devices..</p> 
+<small>w3.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.passani.it/gap/"> 
+<div> 
+<h3>Global Authoring Practices</h3> 
+<p>This document gives general guidelines for web developers and content authors who are searching for directions to help create sites for the mobile web....</p> 
+<small>www.passani.it</small> 
+</div> 
+</a> 
+ 
+<a href="https://spreadsheets.google.com/ccc?key=0AsJ0Pb__7jQAdExlbjBYWkJWVHppVlpCend3UUZ4bHc&authkey=CJPSkfwO&hl=en&pli=1#gid=0"> 
+<div> 
+<h3>Smartphone Front-end Matrices</h3> 
+<p>This spreadsheet provides smart-phone information matter to front end mobile web developers...</p> 
+<small>spreadsheets.google.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.campaignmonitor.com/blog/post/3163/optimizing-your-emails-for-mobile-devices-with-media/"> 
+ 
+<div> 
+<h3>Optimise EDM for Mobile</h3> 
+<p>Designing for the mobile web is nothing particularly new - or rare. With pretty much every decent handset available providing the...</p> 
+<small>campaignmonitor.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://quirksmode.org/mobile/"> 
+ 
+<div> 
+<h3>Quirksmode Mobile</h3> 
+<p>This section contains my official mobile pages. They treat various aspects of mobile web development...</p> 
+<small>quirksmode.org</small> 
+</div> 
+</a> 
+ 
+<a href="http://validator.w3.org/mobile/"> 
+<div> 
+<h3>W3C mobileOK Checker</h3> 
+<p>This checker performs various tests on a Web Page to determine its level of mobile-friendliness. The tests are defined in the mobileOK Basic Tests 1.0 specification...</p> 
+<small>validator.w3.org/mobile</small> 
+</div> 
+</a> 
+ 
+<a href="http://chrispederick.com/work/user-agent-switcher/"> 
+<div> 
+<h3>User Agent Switcher</h3> 
+<p>Chris Pederick's User Agent Switcher is an essential Firefox add-on for anybody in the business of creating mobile web sites...</p> 
+<small>chrispederick.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://alexw.me/ipad2/"> 
+<div> 
+<h3>iPad Emulator</h3> 
+<p>Browser-based iPad emulator...</p> 
+<small>alexw.me</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.testiphone.com/"> 
+<div> 
+<h3>iPhone Emulator</h3> 
+<p>This is a web browser based simulator for quickly testing your iPhone web applications...</p> 
+<small>testiphone.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://developer.palm.com"> 
+<div> 
+<h3>HP/Palm webOS Emulator</h3> 
+<p>Emulator accessible via webOS SDK...</p> 
+<small>developer.palm.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://forum.xda-developers.com/showthread.php?p=4420071#post442007"> 
+<div> 
+<h3>Android Emulator</h3> 
+<p>Test your web app on Android, bypass Android's SDK (tested and works a charm).</p> 
+<small>forum.xda-developers.com</small> 
+</div> 
+</a> 
+ 
+<a href="https://swdownloads.blackberry.com/Downloads/entry.do?code=060AD92489947D410D897474079C1477"> 
+<div> 
+<h3>BlackBerry Device Simulators</h3> 
+<p>Welcome Developers! To view software for a BlackBerry product, please select a product from the drop down menu and click Select...</p> 
+<small>swdownloads.blackberry.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://msdn.microsoft.com/en-us/windowsmobile"> 
+<div> 
+<h3>Windows Phone 7 Emulator</h3> 
+<p>Emulator accessible via Windows Mobile 6 SDK...</p> 
+<small>swdownloads.blackberry.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.opera.com/mobile/demo/"> 
+<div> 
+<h3>Opera Mini Simulator</h3> 
+<p>Browser-based demo of Opera Mini 6 that functions as it would when installed on a handset...</p> 
+<small>opera.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.forum.nokia.com/Library/Tools_and_downloads/Other/Symbian_SDKs/"> 
+<div> 
+<h3>Symbian Emulator</h3> 
+<p>Emulator accessible via Symbian SDK...</p> 
+<small>forum.nokia.com</small> 
+</div> 
+</a> 
+ 
+<div class="category"> 
+<h2>Typography</h2> 
+</div> 
+ 
+<a href="http://webtypography.net/toc"> 
+<div> 
+<h3>Elements of Typographic Style Applied to the Web</h3> 
+<p>Great reference for laying out type on the web. The Vertical Motion chapter is particularly good.</p> 
+<small>webtypography.net/toc</small> 
+</div> 
+</a> 
+ 
+<a href="http://www.alistapart.com/articles/howtosizetextincss"> 
+ 
+<div> 
+<h3>How to Size Text in CSS</h3> 
+<p>In this article, we will reconcile the designer’s requirement for accuracy with the user’s need to resize text on demand, arriving at a best practice...</p> 
+<small>alistapart.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://typekit.com"> 
+<div> 
+<h3>Typekit</h3> 
+<p>This will change the way you design websites. Add a line of code to your pages and choose from hundreds of fonts. Simple, bulletproof, standards compliant, accessible, and totally legal.</p> 
+<small>typekit.com</small> 
+</div> 
+</a> 
+ 
+<a href="http://developer.yahoo.com/yui/3/cssfonts"> 
+<div> 
+<h3>YUI 3: CSS Fonts</h3> 
+<p>The foundational CSS Fonts provides cross-browser typographical normalization and control while still allowing users to choose and adjust their font size...</p> 
+<small>developer.yahoo.com</small> 
+</div> 
+</a> 
+<script src="scripts/css3-mediaqueries.js"></script>
+</body> 
+</html>
