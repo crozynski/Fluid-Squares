@@ -1,6 +1,6 @@
-/*	Authors		Craig Rozynski craigrozynski.com, dinosaurswithlaserz.com 
+/*	Authors		Craig Rozynski craigrozynski.com
 							Marco Lago marcolago.com
-		Version		2.0 2011-07-15 */
+		Version		2.0 2015-02-02 */
 
 /* CSS Reset (customised) */
 
@@ -20,13 +20,14 @@ strong, th { font-weight: bold; }
 ::selection { background: #3b7cbf; color: #fff; text-shadow: none; }
 a:link { -webkit-tap-highlight-color: #3b7cbf; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 
 /* Primary Styles */
   
 body {
 	padding: 10px;
-	font: 1em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font: 1em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial sans-serif;
+	font-weight: 300;
 	color: #515047;
 	background-color: #F2F1DB;
 }
@@ -37,7 +38,10 @@ a, a:link, a:visited, a:active, .title, .category {
 	margin-bottom: 30px;
 	text-decoration: none;
 }
-h1, h2, h3 { font-size: 3em; }
+h1, h2, h3 { 
+	font-size: 3em;
+	font-weight: 700;
+}
 h1 {
 	color: #515047;
 	line-height: 0.8;
