@@ -8,7 +8,7 @@ Fluid Squares preserves a unit's square proportion within a fluid layout. The nu
 
 It works on all modern desktop browsers. Media queries are written Mobile First. IE8 doesn't support media queries, so the css3-mediaqueries.js polyfill is temporarily included. 
 
-See [www.fluidsquares.com](www.fluidsquares.com) for more.
+See [www.fluidsquares.com](http://www.fluidsquares.com) for more.
 
 ## What problem does Fluid Squares fix?
 
